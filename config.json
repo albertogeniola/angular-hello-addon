@@ -1,12 +1,15 @@
 {
-  "name": "Demo Addon",
-  "version": "0.1",
-  "slug": "myaddon",
-  "description": "Add-on that prints 'Hello, world' to the log and exits",
-  "url": "https://github.com/issacg/hassio-addon-devcontainer",
-  "startup": "once",
-  "boot": "manual",
-  "options": {},
-  "schema": {}, 
-  "arch": ["amd64", "armv7", "armhf", "i386" , "aarch64"]
-}
+    "name": "Hello Angular Addon",
+    "version": "dev",
+    "slug": "helloangularaddon",
+    "description": "Simple Angular Hello-World behind nginx ingress",
+    "url": "https://github.com/albertogeniola/test-addon-ingress",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "application",
+    "boot": "auto",
+    "ports": {},
+    "ports_description": {},
+    "host_network": true,
+    "ingress": true,
+    "ingress_port": 8099
+  }
